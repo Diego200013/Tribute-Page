@@ -8,6 +8,7 @@
     /*------Colors------*/
     --principal-color: #100e17;
     --secondary-color: #ff8a00;
+    --terciary-color: #e2344a;
     --black-color: #000;
     --white-color: #fff;
     /*---- espacing ---- */
@@ -102,4 +103,8 @@ body {
 
 #tribute-info p {
     margin-bottom: 2em;
+}
+
+#tribute-info #tribute-link {
+    color: var(--terciary-color);
 }
