@@ -12,6 +12,7 @@
     --white-color: #fff;
     /*---- espacing ---- */
     --center-space: center;
+    --auto-space: auto;
 }
 
 * {
@@ -24,14 +25,20 @@ body {
     font-size: 16px;
 }
 
+
+/* principal container */
+
 #main {
     color: var(--white-color);
     height: 100vh;
     width: 90%;
     background-color: var(--principal-color);
-    margin: 0 auto;
+    margin: 0 var(--auto-space);
     box-shadow: 10px 10px 5px var(--black-color);
 }
+
+
+/* informaction character section */
 
 #main #title {
     font-family: Tahoma, sans-serif;
@@ -54,4 +61,18 @@ body {
 #main #description {
     font-style: italic;
     text-align: var(--center-space);
+}
+
+
+/* representative image character */
+
+#img-div {
+    width: 70%;
+    margin: 5em var(--auto-space);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#img-div img {
+    width: 100%;
 }
